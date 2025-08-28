@@ -592,7 +592,6 @@ with tab2:
     "粗利",
     "粗利率"
     ]
-    st.write("df_filteredの列名:", df_filtered.columns.tolist()) # この行を追加してデバッグ
     df_disp = df_filtered[show_cols].copy()
     # 日付最小・最大をYY/MM形式で表示
     for c in ["日付（最小）","日付（最大）"]:
@@ -705,5 +704,6 @@ with tab3:
 
     else:
         st.info("利用率を計算できるデータがありません。")
+
 
 
